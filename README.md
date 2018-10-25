@@ -18,22 +18,8 @@ dart .\main.dart run weight.bin small.bin out.bin 2 4 1
 
 ```
 
-### Use as lib
+### Tweek it
 ```dart
-    import 'libs/net.dart';
-    
-    Net neuralNet = new Net([3,6,8,1]);
-
-    neuralNet.loadWeights("weightFile");
-    neuralNet.feedForward([0.2, 0.8, 1.0]);
-
-    List<double> result = neuralNet.getResults();
-
-```
-
-##### Optionally you tweek it like so
-```dart
- 
  double learningRate = 0.15;
  double step = 0.5;
  
@@ -47,5 +33,17 @@ dart .\main.dart run weight.bin small.bin out.bin 2 4 1
                     eta: learningRate,
                     alpha: step
                  );
+```
+
+### Use as lib
+```dart
+    import 'libs/net.dart';
+    
+    Net neuralNet = new Net([3,6,8,1]);
+
+    neuralNet.loadWeights("weightFile");
+    neuralNet.feedForward([0.2, 0.8, 1.0]);
+
+    List<double> result = neuralNet.getResults();
 
 ```
