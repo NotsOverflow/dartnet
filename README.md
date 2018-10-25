@@ -1,4 +1,4 @@
-# dartnet
+# DartNet
 Dart Deep Neural Network
 
 
