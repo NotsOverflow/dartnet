@@ -30,3 +30,22 @@ dart .\main.dart run weight.bin small.bin out.bin 2 4 1
     List<double> result = neuralNet.getResults();
 
 ```
+
+##### Optionally you tweek it like so
+```dart
+ 
+ double learningRate = 0.15;
+ double step = 0.5;
+ 
+ double myActivation(double x){ ... }
+ double myDerivate(double x){ ... }
+ 
+ Net neuralNet = new Net(
+                    [3,6,8,1],
+                    activationFunction: myActivation,
+                    derivativeFunction: myDerivate,
+                    eta: learningRate,
+                    alpha: step
+                 );
+
+```
