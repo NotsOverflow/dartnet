@@ -5,7 +5,7 @@ Dart Deep Neural Network
 ### Test it
 ```bash
 
-git clone https://github.com/richardjuan/dartnet.git && cd dartnet
+git clone https://github.com/NotsOverflow/dartnet.git && cd dartnet
 
 # generate a Xor dataset of 2500 data ( in, in, out )
 dart .\tools\generate_xor.dart small.bin 2500
